@@ -20,6 +20,7 @@
     "./skills/productivity/grilling",
     "./skills/productivity/handoff",
     "./skills/productivity/teach",
+    "./skills/productivity/learn",
     "./skills/productivity/writing-great-skills"
   ]
 }
