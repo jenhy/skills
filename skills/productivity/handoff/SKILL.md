@@ -5,12 +5,38 @@ argument-hint: "What will the next session be used for?"
 disable-model-invocation: true
 ---
 
-Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save to the temporary directory of the user's OS - not the current workspace.
+Run the following steps in order, without skipping any:
 
-Include a "suggested skills" section in the document, naming which skills the next agent should call the Skill tool for.
+1. **Create a handoff markdown file** in the system's temporary directory (`/tmp/handoff-<topic>.md` or `%TEMP%/handoff-<topic>.md`). Do not save it to the current workspace.
 
-Do not duplicate content already captured in other artifacts (specs, plans, ADRs, issues, commits, diffs). Reference them by path or URL instead.
+2. Use the following template:
 
-Redact any sensitive information, such as API keys, passwords, or personally identifiable information.
+   ```markdown
+   # Handoff: <topic>
 
-If the user passed arguments, treat them as a description of what the next session will focus on and tailor the doc accordingly.
+   ## Summary
+
+   What was accomplished in this session. 2-3 sentences.
+
+   ## Completed
+
+   - Bullet list of what was done
+
+   ## In Progress / Next Steps
+
+   - What the next agent should work on
+
+   ## Suggested Skills
+
+   - Which skills the next agent should call the Skill tool for (e.g. `/to-spec`, `/implement`)
+
+   ## Artifacts
+
+   - Reference to existing files by path or URL (do not duplicate content already captured in specs, plans, ADRs, issues, commits, diffs)
+   ```
+
+3. **Redact** any sensitive information (API keys, passwords, PII).
+
+4. If the user passed arguments, treat them as a description of what the next session will focus on and tailor the doc accordingly.
+
+5. **Report the file path** to the user.
