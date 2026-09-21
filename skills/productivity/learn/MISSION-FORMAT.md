@@ -1,43 +1,43 @@
-# MISSION.md Format
+# MISSION.md 格式
 
-`MISSION.md` lives at the workspace root. It captures the _reason_ the user is learning this topic. Every learning decision (what to learn next, which resources to study, which exercises to practice) should trace back to this document.
+`MISSION.md` 放在工作空间根目录，记录用户学这个主题的**原因**。每一个教学决策（接下来学什么、看哪些资源、练哪些题）都要能追溯回这份文档。
 
-## Template
+## 模板
 
 ```md
-# Mission: {Topic}
+# 使命：{主题}
 
-## Why
-{1-3 sentences. The concrete real-world goal the user is chasing. What changes in their life or work when they have this skill? Avoid abstract framings like "to understand X"; push for the underlying outcome.}
+## Why（为什么学）
+{1-3 句话。用户真正在追的具体目标。学会之后，他的生活或工作会有什么不同？拒绝「想理解 X」这类抽象说法，追问到背后的结果。}
 
-## Success looks like
-- {A specific, observable thing the user will be able to do}
-- {Another specific thing}
+## Success looks like（做到什么算成功）
+- {一件具体的、可观察的事，用户能做到了}
+- {另一件具体的事}
 - {…}
 
-## Constraints
-- {Time, budget, prior commitments, learning preferences, anything that bounds the approach}
+## Constraints（约束）
+- {时间、预算、已有的其他承诺、学习偏好，任何限制方案的因素}
 
-## Out of scope
-- {Adjacent topics the user explicitly does not want to chase right now, protecting the zone of proximal development}
+## Out of scope（不做什么）
+- {用户明确表示现在不想碰的邻近主题，用来保护最近发展区}
 ```
 
-## Rules
+## 规则
 
-- **One mission per workspace.** If the user wants to learn two unrelated things, that is two workspaces.
-- **Concrete over abstract.** "Run a half marathon by October" beats "get fitter." "Ship a Rust CLI to my team" beats "learn Rust."
-- **Push back on vagueness.** If the user cannot articulate why, interview them before writing anything. A bad mission is worse than no mission.
-- **Revise when reality shifts.** Missions change. When the user's goal moves, update this file: don't leave a stale mission steering future sessions.
-- **Keep it short.** If `MISSION.md` runs past a screen, it has stopped being a compass and started being a plan.
+- **一个工作空间一个使命。** 用户想学两件不相关的事，就是两个工作空间。
+- **具体优先于抽象。** 「十月前跑完半马」好过「变得更健康」；「给团队发布一个 Rust CLI」好过「学 Rust」。
+- **含糊就顶回去。** 用户说不清为什么学，就先采访，什么都别写。一个糟糕的使命比没有使命更坏。
+- **现实变了就改。** 使命会变。用户的目标移动了，就更新这份文件，不要让一个过期的使命继续指挥后续 session。
+- **保持简短。** 如果 `MISSION.md` 超过一屏，它就不再是罗盘，而变成计划书了。
 
-## Learning Ladder
+## 学习阶梯（Learning Ladder）
 
-When the learning ladder tool is used, append a ladder table to MISSION.md:
+用了学习阶梯工具后，往 MISSION.md 追加一张阶梯表：
 
 ```md
 ## Learning Ladder
 
-| Level | What to Master | Common Mistakes | Gate to Next Level |
+| 等级 | 要掌握什么 | 常见错误 | 进入下一级的达标标准 |
 |-------|---------------|-----------------|-------------------|
 | L1: ... | ... | ... | ... |
 | L2: ... | ... | ... | ... |
@@ -45,6 +45,6 @@ When the learning ladder tool is used, append a ladder table to MISSION.md:
 | L4: ... | ... | ... | ... |
 | L5: ... | ... | ... | ... |
 
-**Current level:** L{x}
-**Target level:** L{y}
+**当前等级：** L{x}
+**目标等级：** L{y}
 ```
