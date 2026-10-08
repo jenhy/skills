@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 Run the following steps in order, without skipping any:
 
-1. **Use the Write tool to save a handoff markdown file** to the system's temporary directory (`/tmp/handoff-<topic>.md` or `%TEMP%/handoff-<topic>.md`). Do not save it to the current workspace.
+1. **Use the Write tool to save a handoff markdown file** to the temporary directory of the user's OS (`$TMPDIR`, else `/tmp`; `%TEMP%` on Windows), named `handoff-<topic>.md`. Do not save it to the current workspace.
 
 2. Use the following template:
 
