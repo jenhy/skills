@@ -7,5 +7,5 @@ disable-model-invocation: true
 Run the following steps in order, without skipping any:
 
 1. **Call the Skill tool for "grilling"** — interview the user until the frontier is empty.
-2. **Call the Skill tool for "domain-modeling"** — write `CONTEXT.md` and ADRs from the grilling results. Do not skip this step.
+2. **Call the Skill tool for "domain-modeling"** — write `GLOSSARY.md` and ADRs from the grilling results. Do not skip this step.
 3. Present the final summary and ask the user to confirm.
