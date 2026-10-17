@@ -16,8 +16,9 @@ disable-model-invocation: true
 - `MISSION.md`：学习目标 + 学习阶梯表。格式见 [MISSION-FORMAT.md](./MISSION-FORMAT.md)。
 - `RESOURCES.md`：筛选后的高价值资源。格式见 [RESOURCES-FORMAT.md](./RESOURCES-FORMAT.md)。
 - `NOTES.md`：用户偏好、学习计划、临时笔记。
+- `GLOSSARY.md`：工作空间的标准用语表，所有课程、参考资料、学习记录都必须遵守。格式见 [GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md)。
 - `./lessons/*.html`：课程文件，命名 `0001-<名称>.html`，编号递增。
-- `./reference/*.html`：参考资料（语法速查、算法流程图、术语表、一页速查表）。
+- `./reference/*.html`：参考资料（语法速查、算法流程图、一页速查表）。
 - `./learning-records/*.md`：学习记录（类似 ADR），命名为 `0001-<名称>.md`。格式见 [LEARNING-RECORD-FORMAT.md](./LEARNING-RECORD-FORMAT.md)。
 - `./assets/*`：跨课程复用的组件（样式表、测验组件、图表工具）。
 
@@ -294,9 +295,6 @@ N 题答完，计算总平均分。< M 分（M 默认 6，Claude 可根据阶段
 适合做成参考的内容：
 - 编程的语法和代码片段
 - 流程的算法和流程图
-- 任何有专用术语的领域的术语表
-
-术语表尤其重要——一旦创建，每节课都应遵守。
 
 ### 一页速查表
 
@@ -342,7 +340,7 @@ N 题答完，计算总平均分。< M 分（M 默认 6，Claude 可根据阶段
 
 ## 术语表（Glossary）
 
-术语表是一种特殊的 reference 文档。一旦创建，在所有课程中保持一致使用。不确定用户是否理解某个术语时，先定义再使用。
+`GLOSSARY.md` 位于工作空间根目录，是这个教学空间的标准用语。一旦创建，所有课程、参考资料、学习记录都必须遵守它的术语；写词条定义时，也要用表内的词。不确定用户是否理解某个术语时，先定义再使用。格式见 [GLOSSARY-FORMAT.md](./GLOSSARY-FORMAT.md)。
 
 ## NOTES.md
 
